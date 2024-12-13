@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CilindroActivity">
+
+    <!-- Imagen -->
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="370dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:contentDescription="Imagen del Cilindro"
+        android:src="@drawable/cilindro" />
+
+    <!-- Campo para el Radio -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgView"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="70dp"
+        android:text="Radio:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgView"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:ems="8"
+        android:inputType="numberDecimal" />
+
+    <!-- Campo para la Altura -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtN1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="70dp"
+        android:text="Altura:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtN1"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:ems="8"
+        android:inputType="numberDecimal" />
+
+    <!-- Botón de resultado -->
+    <Button
+        android:id="@+id/btnResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtN2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="RESULTADO" />
+
+    <!-- Texto de Perímetro -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnResultado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Perímetro:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Resultado del Volumen -->
+    <TextView
+        android:id="@+id/txtResultadoVolumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnResultado"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

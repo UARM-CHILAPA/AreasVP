@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EsferaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Esfera" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="430dp"
+        android:text="Lado:" />
+
+    <EditText
+        android:id="@+id/txtN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/esfera" />
+
+    <Button
+        android:id="@+id/btnResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="520dp"
+        android:layout_marginTop="120dp"
+        android:ems="8"
+        android:text="RESULTADO" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="550dp"
+        android:layout_marginTop="220dp"
+        android:text="Volumen:" />
+
+
+    <TextView
+        android:id="@+id/txtResultadoVolumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="560dp"
+        android:layout_marginTop="240dp"
+        android:text="--" />
+
+</RelativeLayout>

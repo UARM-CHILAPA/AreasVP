@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrianguloActivity">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Triangulo" />
+
+    <!-- Imagen -->
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="370dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/triangulo" />
+
+    <!-- Lado (Etiqueta y Campo de texto) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgView"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:text="Lado:" />
+
+    <EditText
+        android:id="@+id/txtN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="150dp"
+        android:ems="8"
+        android:inputType="numberSigned" />
+
+    <!-- Botón para Calcular -->
+    <Button
+        android:id="@+id/btnResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtN1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="RESULTADO" />
+
+    <!-- Resultados -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnResultado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Perimetro:" />
+
+    <TextView
+        android:id="@+id/txtResultadoPerimetro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnResultado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="--" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtResultadoPerimetro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Área:" />
+
+    <TextView
+        android:id="@+id/txtResultadoArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtResultadoPerimetro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="--" />
+
+</RelativeLayout>
